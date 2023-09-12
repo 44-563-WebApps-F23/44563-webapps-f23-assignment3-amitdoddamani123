@@ -73,10 +73,16 @@
 
 <h4>Snippet:</h4>
 
-<blockquote> https://css-tricks.com/example/index.html?s=flexbox
-    var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
-    var pathArray = window.location.pathname.split('/');\
-    var secondLevelLocation = pathArray[0];
+<blockquote> 
+    
+    var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search <br>
+    var pathArray = window.location.pathname.split('/'); <br>
+    var secondLevelLocation = pathArray[0]; <br>
+    var newPathname = ""; <br>
+    for (i = 0; i < pathArray.length; i++) { <br>
+    newPathname += "/"; <br>
+    newPathname += pathArray[i]; <br>
+}
 </blockquote>
 
 <hr>
